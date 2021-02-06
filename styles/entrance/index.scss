@@ -1,0 +1,54 @@
+body {
+	background: url("../../img/entrance-photo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.navbar {
+	height: 100px;
+	padding: 0 !important;
+	position: relative !important;
+	z-index: 100;
+	.unordered {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		padding: 0 !important;
+
+		.item {
+			align-self: center;
+			justify-self: center;
+			list-style-type: none;
+			font-size: 22px;
+			color: white;
+		}
+	}
+}
+
+.union-container {
+	align-self: center;
+	justify-self: center;
+	p {
+		margin-top: 50px;
+	}
+	svg {
+		margin-top: 200px;
+	}
+	.page-title {
+		font-size: 22px;
+		color: white;
+	}
+	.bluish {
+		fill: #2029f6;
+	}
+	.greenish {
+		fill: #4cd62a;
+	}
+	.light-bluish {
+		fill: #27bbc5;
+	}
+}
+
+.entrance-section {
+	margin-top: calc(1.5vw + 1vh);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}

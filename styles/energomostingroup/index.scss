@@ -1,0 +1,39 @@
+body {
+	background: url("/img/energomostintgroup/bg-image-merged.png");
+	* {
+		color: white;
+	}
+}
+@import "../dry";
+@import "../form/index";
+
+.section-description {
+	font-size: 25px;
+	text-align: center;
+	margin-top: 100px;
+	width: 80%;
+
+	// padding: 0 10px;
+}
+.content,
+.plus-sign {
+	background: #55ac4e;
+}
+
+.section-title {
+	margin-left: 200px !important;
+}
+
+.rent {
+	background: transparent !important;
+	border: 3px solid white !important;
+	border-radius: 0 !important;
+	height: 73px;
+	font-size: 23px !important;
+	width: 305px;
+	&:hover {
+		color: #55ac4e !important;
+		background: white !important;
+		border: transparent 1px solid !important;
+	}
+}

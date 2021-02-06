@@ -1,0 +1,67 @@
+$errorColor: #d65858;
+
+.form {
+	* {
+		color: black;
+	}
+	max-width: 536px !important;
+	&__title,
+	.form__subtitle {
+		text-align: center;
+		font-size: 12px;
+	}
+	&__title {
+		font-size: 28px;
+	}
+
+	.form-control {
+		border-radius: 0 !important;
+	}
+	.hint {
+		font-size: 15px !important;
+	}
+	.btn-custom-success {
+		border-radius: 0 !important;
+		background: #3fd306;
+		color: white;
+		// padding-: 10px;
+		&:hover {
+			background: darken($color: #3fd306, $amount: 10%);
+		}
+	}
+	.error {
+		background: $errorColor;
+		display: none !important;
+		&__text {
+			color: white;
+			margin-bottom: 0;
+			text-align: center;
+		}
+	}
+	.small-error-hint {
+		color: #d65858;
+		display: none;
+	}
+	.checkbox:checked ~ .collection {
+		.error {
+			display: block !important;
+		}
+	}
+	.checkbox:checked ~ .input-container {
+		.form-control {
+			border-color: $errorColor;
+		}
+		.small-error-hint {
+			display: unset !important;
+		}
+	}
+	.checkbox {
+		position: absolute;
+		bottom: 52px;
+		left: 140px;
+	}
+}
+.success-msg {
+    color: white;
+	background: #5ecb7a !important;
+}

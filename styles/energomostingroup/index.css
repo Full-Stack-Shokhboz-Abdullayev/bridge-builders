@@ -1,0 +1,242 @@
+body {
+  background: url("/img/energomostintgroup/bg-image-merged.png");
+}
+
+body * {
+  color: white;
+}
+
+.effext-big {
+  position: relative;
+}
+
+.effext-big::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 5px;
+  background: white !important;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: matrix(-0.73, -0.68, -0.68, 0.73, 0, 0);
+          transform: matrix(-0.73, -0.68, -0.68, 0.73, 0, 0);
+}
+
+.call-to-action {
+  margin-top: 100px;
+  font-size: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.close {
+  outline: none !important;
+}
+
+.effext-medium {
+  position: relative;
+}
+
+.effext-medium::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  height: 100px;
+  width: 5px;
+  background: white !important;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: matrix(-0.73, -0.68, -0.68, 0.73, 0, 0);
+          transform: matrix(-0.73, -0.68, -0.68, 0.73, 0, 0);
+}
+
+.section {
+  height: 100%;
+}
+
+.section .transparent {
+  width: 50%;
+  height: 100%;
+}
+
+.section .transparent .plus-sign {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.section .transparent .big-text {
+  font-size: 120px;
+}
+
+.section .transparent .entire-text {
+  margin-top: 90px !important;
+  margin-left: 150px !important;
+}
+
+.section .content {
+  width: 50%;
+  padding: 80px 100px;
+}
+
+.section .content .description {
+  font-size: 25px;
+}
+
+.section .content .sections-below {
+  margin-top: 200px;
+}
+
+.section .content .sections-below .section-title {
+  font-size: 52px;
+  margin-left: 130px;
+}
+
+.what-we-do__group,
+.our-projects__group {
+  margin-top: 100px;
+}
+
+.what-we-do__group__item,
+.our-projects__group__item {
+  margin-top: 170px;
+}
+
+.what-we-do__group__item__title,
+.our-projects__group__item__title {
+  font-size: 28px;
+  margin-bottom: 80px;
+}
+
+.form {
+  max-width: 536px !important;
+}
+
+.form * {
+  color: black;
+}
+
+.form__title,
+.form .form__subtitle {
+  text-align: center;
+  font-size: 12px;
+}
+
+.form__title {
+  font-size: 28px;
+}
+
+.form .form-control {
+  border-radius: 0 !important;
+}
+
+.form .hint {
+  font-size: 15px !important;
+}
+
+.form .btn-custom-success {
+  border-radius: 0 !important;
+  background: #3fd306;
+  color: white;
+}
+
+.form .btn-custom-success:hover {
+  background: #30a105;
+}
+
+.form .error {
+  background: #d65858;
+  display: none !important;
+}
+
+.form .error__text {
+  color: white;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.form .small-error-hint {
+  color: #d65858;
+  display: none;
+}
+
+.form .checkbox:checked ~ .collection .error {
+  display: block !important;
+}
+
+.form .checkbox:checked ~ .input-container .form-control {
+  border-color: #d65858;
+}
+
+.form .checkbox:checked ~ .input-container .small-error-hint {
+  display: unset !important;
+}
+
+.form .checkbox {
+  position: absolute;
+  bottom: 52px;
+  left: 140px;
+}
+
+.success-msg {
+  color: white;
+  background: #5ecb7a !important;
+}
+
+.section-description {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 100px;
+  width: 80%;
+}
+
+.content,
+.plus-sign {
+  background: #55ac4e;
+}
+
+.section-title {
+  margin-left: 200px !important;
+}
+
+.rent {
+  background: transparent !important;
+  border: 3px solid white !important;
+  border-radius: 0 !important;
+  height: 73px;
+  font-size: 23px !important;
+  width: 305px;
+}
+
+.rent:hover {
+  color: #55ac4e !important;
+  background: white !important;
+  border: transparent 1px solid !important;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ЭНЕРГО МОСТ ИНТ ГРУП</title>
+		<link rel="stylesheet" href="../styles//energomostingroup/index.css" />
+		<link rel="stylesheet" href="../styles/bootstrap.css" />
+	</head>
+	<body>
+		<div
+			class="modal fade"
+			id="modal"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="modalLabel"
+			aria-hidden="true"
+			data-pause="true"
+		>
+			<!-- <div class="modal-dialog m-0 w-100" role="document"> -->
+			<div
+				class="modal-dialog modal-content form p-5 mx-auto my-4 carousel slide"
+				id="form"
+				role="document"
+			>
+				<h3 class="form__title">
+					ЗАЯВКА НА АРЕНДУ
+					<button
+						type="button"
+						class="close"
+						data-dismiss="modal"
+						aria-label="Close"
+					>
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</h3>
+				<p class="form__subtitle">
+					Введите свои контактные данные, интересующее оборудование и
+					дату
+				</p>
+				<div class="success-msg py-3 mt-4 d-none text-center">
+					Спасибо! ваши данные были отправлены
+				</div>
+				<form class="inputs">
+					
+						<input class="checkbox" type="checkbox">
+					<!-- </div> -->
+					<div class="mt-3 input-container">
+						<input
+							class="form-control"
+							type="text"
+							placeholder="*Имя"
+						/>
+						<span class="small-error-hint">Обязательное поле</span>
+					</div>
+					<div class="mt-3 input-container">
+						<input
+							class="form-control"
+							type="email"
+							placeholder="*E-mail"
+						/>
+						<span class="small-error-hint">Обязательное поле</span>
+					</div>
+					<div class="mt-3 input-container">
+						<input class="form-control" type="text" value="+7" />
+						<span class="small-error-hint">Обязательное поле</span>
+					</div>
+					<div class="mt-3  input-container">
+						<span class="mb-2 hint d-inline-block">
+							Выберите оборудование
+						</span>
+						<select class="form-control">
+							<option value="">
+								ГРЕЙФЕРНАЯ УСТАНОВКА BAUER MC 64 2014
+							</option>
+							<option value="">
+								ГРЕЙФЕРНАЯ УСТАНОВКА BAUER MC 64 2014
+							</option>
+							<option value="">
+								ГРЕЙФЕРНАЯ УСТАНОВКА BAUER MC 64 2014
+							</option>
+						</select>
+						<span class="small-error-hint">Обязательное поле</span>
+					</div>
+					<div class="mt-3  input-container">
+						<span class="mb-2 hint d-inline-block">
+							Выберите дату
+						</span>
+						<input
+							type="date"
+							class="form-control w-50"
+							name=""
+							id=""
+						/>
+						<span class="small-error-hint">Обязательное поле</span>
+					</div>
+					<div class="mt-5 collection">
+						<div class="error d-block w-100 py-2">
+							<p class="error__text">
+								Пожалуйста заполните все поля
+							</p>
+						</div>
+						<div class="mt-3">
+							<button
+								class="btn btn-block py-2 btn-custom-success"
+							>
+								ОТПРАВИТЬ
+							</button>
+						</div>
+					</div>
+					<p class="mt-3 mb-0">
+						Show Errors
+					</p>
+
+				</form>
+			</div>
+		</div>
+		<section class="d-flex section">
+			<div class="transparent">
+				<div class="plus-sign">
+					<svg
+						width="30"
+						height="30"
+						viewBox="0 0 110 110"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							class="bluish"
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							fill="#fff"
+							d="M63.5714 0H46.4286V46.4286H0V63.5714H46.4286V110H63.5714V63.5714H110V46.4286H63.5714V0Z"
+						/>
+					</svg>
+				</div>
+				<h3 class="effext-big big-text entire-text">
+					ЭНЕРГО МОСТ <br />
+					ИНТ <br />
+					ГРУП
+				</h3>
+			</div>
+
+			<div class="content">
+				<section>
+					<p class="description">
+						Нашим клиентам предлагается аренда строительных машин на
+						любой срок: от одной смены для выполнения разовых работ,
+						до нескольких месяцев или лет. В течении действия
+						договора по аренде спецтехники нашим клиентам
+						гарантируется “полный” технический сервис для
+						арендованного оборудования. Гибкая система оплат и
+						скидок при длительной аренде техники позволяют нам
+						взаимовыгодно работать с нашими клиентами.
+					</p>
+					<p class="description mt-4">
+						Наша компания рада предложить вам полный спектр услуг по
+						аренде специальной техники для проведения строительных и
+						дорожных работ.
+					</p>
+				</section>
+				<section class="sections-below">
+					<h3 class="effext-medium section-title">ОФОРМИТЕ ЗАЯВКУ</h3>
+					<div
+						class="d-flex justify-content-center align-items-center"
+					>
+						<p class="section-description">
+							ЗАПОЛНИТЕ ФОРМУ АРЕНДЫ ДЛЯ ОФОРМЛЕНИЯ ЗАЯВКИ
+						</p>
+					</div>
+
+					<div
+						class="mt-5 d-flex justify-content-center align-items-center"
+					>
+						<button
+							data-toggle="modal"
+							data-target="#modal"
+							class="btn rent d-flex justify-content-center align-items-center"
+						>
+							АРЕНДОВАТЬ
+						</button>
+					</div>
+				</section>
+			</div>
+		</section>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+		<script src="../js/form.js"></script>
+	</body>
+</html>

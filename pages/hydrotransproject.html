@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../styles/hydrotransproject/index.css" />
+		<link rel="stylesheet" href="../styles/bootstrap.css" />
+		<title>Гидротранспроект</title>
+	</head>
+	<body>
+		<div
+			class="modal fade"
+			id="modal"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="modalLabel"
+			aria-hidden="true"
+			data-pause="true"
+		>
+			<!-- <div class="modal-dialog m-0 w-100" role="document"> -->
+			<div
+				class="modal-dialog modal-content gallery p-5 mx-auto my-4 carousel slide"
+				id="gallery"
+				role="document"
+			>
+				<h3 class="gallery__title">
+					Галерея
+					<button
+						type="button"
+						class="close"
+						data-dismiss="modal"
+						aria-label="Close"
+					>
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</h3>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<ul class="gallery__group">
+							<li class="gallery__group__item">
+								<span class="gallery__group__item__location"
+									>Москва</span
+								>
+								<img
+									class="gallery__group__item__img"
+									src="/img/gallery/bridge1.png"
+									alt=""
+								/>
+								<div
+									class="gallery__group__item__name d-flex justify-content-center align-items-center"
+								>
+									<h4>Парящий мост</h4>
+								</div>
+							</li>
+							<li class="gallery__group__item">
+								<span class="gallery__group__item__location"
+									>Москва</span
+								>
+								<img
+									class="gallery__group__item__img"
+									src="/img/gallery/bridge1.png"
+									alt=""
+								/>
+								<div
+									class="gallery__group__item__name d-flex justify-content-center align-items-center"
+								>
+									<h4>Парящий мост</h4>
+								</div>
+							</li>
+							<li class="gallery__group__item">
+								<span class="gallery__group__item__location"
+									>Москва</span
+								>
+								<img
+									class="gallery__group__item__img"
+									src="/img/gallery/bridge1.png"
+									alt=""
+								/>
+								<div
+									class="gallery__group__item__name d-flex justify-content-center align-items-center"
+								>
+									<h4>Парящий мост</h4>
+								</div>
+							</li>
+							<li class="gallery__group__item">
+								<span class="gallery__group__item__location"
+									>Москва</span
+								>
+								<img
+									class="gallery__group__item__img"
+									src="/img/gallery/bridge1.png"
+									alt=""
+								/>
+								<div
+									class="gallery__group__item__name d-flex justify-content-center align-items-center"
+								>
+									<h4>Парящий мост</h4>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="carousel-item">
+						<ul class="gallery__group">
+							<li class="gallery__group__item">
+								<span class="gallery__group__item__location"
+									>Москва</span
+								>
+								<img
+									class="gallery__group__item__img"
+									src="/img/gallery/bridge1.png"
+									alt=""
+								/>
+								<div
+									class="gallery__group__item__name d-flex justify-content-center align-items-center"
+								>
+									<h4>Парящий мост</h4>
+								</div>
+							</li>
+							<li class="gallery__group__item">
+								<span class="gallery__group__item__location"
+									>Москва</span
+								>
+								<img
+									class="gallery__group__item__img"
+									src="/img/gallery/bridge1.png"
+									alt=""
+								/>
+								<div
+									class="gallery__group__item__name d-flex justify-content-center align-items-center"
+								>
+									<h4>Парящий мост</h4>
+								</div>
+							</li>
+							<li class="gallery__group__item">
+								<span class="gallery__group__item__location"
+									>Москва</span
+								>
+								<img
+									class="gallery__group__item__img"
+									src="/img/gallery/bridge1.png"
+									alt=""
+								/>
+								<div
+									class="gallery__group__item__name d-flex justify-content-center align-items-center"
+								>
+									<h4>Парящий мост</h4>
+								</div>
+							</li>
+							<li class="gallery__group__item">
+								<span class="gallery__group__item__location"
+									>Москва</span
+								>
+								<img
+									class="gallery__group__item__img"
+									src="/img/gallery/bridge1.png"
+									alt=""
+								/>
+								<div
+									class="gallery__group__item__name d-flex justify-content-center align-items-center"
+								>
+									<h4>Парящий мост</h4>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="slide-controller">
+					<a
+						class="arrow"
+						href="#gallery"
+						role="button"
+						data-slide="prev"
+					>
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<ul class="carousel-indicators gallery__points">
+						<li
+							data-target="#gallery"
+							data-slide-to="0"
+							class="active"
+						>
+							<div class="square"></div>
+						</li>
+						<li data-target="#gallery" data-slide-to="1">
+							<div class="square"></div>
+						</li>
+					</ul>
+					<a
+						class="arrow"
+						href="#gallery"
+						role="button"
+						data-slide="next"
+					>
+						<span class="carousel-control-next-icon"></span>
+					</a>
+				</div>
+				<!-- </div> -->
+			</div>
+		</div>
+		<section class="d-flex section">
+			<div class="transparent">
+				<div class="plus-sign">
+					<svg
+						width="30"
+						height="30"
+						viewBox="0 0 110 110"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							class="bluish"
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							fill="#fff"
+							d="M63.5714 0H46.4286V46.4286H0V63.5714H46.4286V110H63.5714V63.5714H110V46.4286H63.5714V0Z"
+						/>
+					</svg>
+				</div>
+				<h3 class="effext-big big-text entire-text">
+					ИНСИТУТ ГИДРО ТРАНС ПРОЕКТ
+				</h3>
+			</div>
+			<div class="content">
+				<section>
+					<p class="description">
+						Проектно-производственная компания Институт
+						ГидроТрансПроект была основана в 1989 году
+						инженером-мостовиком Исмиевым Эфенди Мурадовичем. С
+						самого начала основной своей задачей компания считала
+						создание индивидуальных решений для каждого моста и
+						каждого проекта. Анализ современных конструкций и
+						материалов, современных технологий, вариантное
+						проектирование и выбор окончательного решения вместе с
+						заказчиком, технологичность и эксплуатационная
+						надежность конструкций – вот главные принципы, которые
+						стали приоритетными для инженеров компании.
+					</p>
+					<p class="description mt-4">
+						Компания занята в области проектирования автомобильных
+						дорог, мостов, гражданских и промышленных объектов,
+						объектов мелиорации и водного хозяйства,
+						гидротехнических, речных и морских сооружений,
+						осуществлением авторского надзора и технического
+						надзора, управлением проектами при строительстве и
+						реконструкции транспортных сооружений высшей категории
+						сложности, консультационными услугами и подготовкой
+						тендерной документации.
+					</p>
+				</section>
+				<section class="sections-below what-we-do">
+					<h3 class="section-title effext-medium">
+						ОСНОВНЫЕ НАПРАВЛЕНИЯ
+					</h3>
+					<div class="what-we-do__group">
+						<div
+							class="what-we-do__group__item d-flex justify-content-center align-items-center flex-column"
+						>
+							<p class="what-we-do__group__item__title">
+								Проектирование объектов инфраструктуры
+							</p>
+							<img
+								src="../img/hydrotranportproject/infrastructure.svg"
+								alt=""
+							/>
+						</div>
+						<div
+							class="what-we-do__group__item d-flex justify-content-center align-items-center flex-column"
+						>
+							<p class="what-we-do__group__item__title">
+								Строительство тоннелей
+							</p>
+							<img
+								src="../img/hydrotranportproject/tunnel.svg"
+								alt=""
+							/>
+						</div>
+						<div
+							class="what-we-do__group__item d-flex justify-content-center align-items-center flex-column"
+						>
+							<p class="what-we-do__group__item__title">
+								Строительство мостов
+							</p>
+							<img
+								src="../img/hydrotranportproject/bridge.svg"
+								alt=""
+							/>
+						</div>
+					</div>
+				</section>
+				<section class="sections-below">
+					<h3 class="section-title effext-medium">
+						ПОСЛЕДНИЕ ПРОЕКТЫ
+					</h3>
+					<div class="what-we-do__group">
+						<div
+							class="what-we-do__group__item d-flex justify-content-center align-items-center flex-column"
+						>
+							<p class="what-we-do__group__item__title">
+								ПАРЯЩИЙ МОСТ
+							</p>
+							<img
+								src="../img/hydrotranportproject/bridge1.png"
+								alt=""
+							/>
+						</div>
+						<div
+							class="what-we-do__group__item d-flex justify-content-center align-items-center flex-column"
+						>
+							<p class="what-we-do__group__item__title">
+								МОСТ ЧЕРЕЗ РЕКУ САМУР
+							</p>
+							<img
+								src="../img/hydrotranportproject/bridge2.png"
+								alt=""
+							/>
+						</div>
+						<div
+							class="what-we-do__group__item d-flex justify-content-center align-items-center flex-column"
+						>
+							<p
+								class="what-we-do__group__item__title text-center"
+							>
+								ТРАНСПОРТНАЯ РАЗВЯЗКА ОКОЛО СТАНЦИИ МЕТРО
+								«КЕРОГЛУ» Г. БАКУ
+							</p>
+							<img
+								src="../img/hydrotranportproject/bridge3.png"
+								alt=""
+							/>
+						</div>
+					</div>
+					<a
+						href="#"
+						class="call-to-action"
+						data-toggle="modal"
+						data-target="#modal"
+					>
+						ПЕРЕЙТИ В ГАЛЛЕРЕЮ
+						<svg
+							width="121"
+							height="45"
+							viewBox="0 0 121 45"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M101.029 0.878689L120.121 19.9706C121.293 21.1421 121.293 23.0416 120.121 24.2132L101.029 43.3051C99.8579 44.4767 97.9584 44.4767 96.7868 43.3051C95.6152 42.1335 95.6152 40.234 96.7868 39.0625L110.757 25.0919L0.499999 25.0919L0.5 19.0919L110.757 19.0919L96.7868 5.12133C95.6152 3.94976 95.6152 2.05026 96.7868 0.878689C97.9584 -0.292885 99.8579 -0.292885 101.029 0.878689Z"
+								fill="white"
+							/>
+						</svg>
+					</a>
+				</section>
+				<section class="sections-below office-address">
+					<p class="office-address__text">
+						Адрес: 123290, г.Москва, туп. Магистральный 1-й д.5А,
+						эт/комната 6/22
+					</p>
+					<p class="office-address__text">Тел.: +7 499 372-70-83</p>
+					<p class="office-address__text">Почта: info@igtp.ru</p>
+					<div class="mapouter">
+						<div class="gmap_canvas">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d95915.87915676589!2d69.255168!3d41.3007872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1612592567954!5m2!1sru!2s"
+								width="600"
+								height="450"
+								frameborder="0"
+								style="border: 0"
+								allowfullscreen=""
+								aria-hidden="false"
+								tabindex="0"
+							></iframe>
+						</div>
+					</div>
+					<p class="view-map">Посмотреть на google карты</p>
+				</section>
+			</div>
+		</section>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

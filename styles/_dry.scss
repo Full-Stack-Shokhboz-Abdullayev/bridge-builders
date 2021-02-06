@@ -1,0 +1,106 @@
+.effext-big {
+	position: relative;
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 150px;
+		width: 5px;
+		background: white !important;
+		transform-origin: top;
+		transform: matrix(-0.73, -0.68, -0.68, 0.73, 0, 0);
+	}
+}
+.call-to-action {
+	margin-top: 100px;
+	font-size: 42px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white !important;
+	text-decoration: none !important;
+
+	// svg {
+	//     margin-
+	// }
+}
+
+.close {
+	outline: none !important;
+}
+
+.effext-medium {
+	position: relative;
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: -20px;
+		height: 100px;
+		width: 5px;
+		background: white !important;
+		transform-origin: top;
+		transform: matrix(-0.73, -0.68, -0.68, 0.73, 0, 0);
+	}
+}
+
+.section {
+	height: 100%;
+
+	.transparent {
+		.plus-sign {
+			// background: #55ac4e !important;
+			border-radius: 50%;
+			width: 60px;
+			height: 60px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: fixed;
+			top: 10px;
+			left: 10px;
+			cursor: pointer;
+		}
+		width: 50%;
+		height: 100%;
+		.big-text {
+			font-size: 120px;
+		}
+		.entire-text {
+			margin-top: 90px !important;
+			margin-left: 150px !important;
+		}
+	}
+
+	.content {
+		width: 50%;
+		padding: 80px 100px;
+		.description {
+			font-size: 25px;
+		}
+		.sections-below {
+			margin-top: 200px;
+			.section-title {
+				font-size: 52px;
+				margin-left: 130px;
+			}
+		}
+	}
+}
+
+.what-we-do,
+.our-projects {
+	&__group {
+		margin-top: 100px;
+		&__item {
+			margin-top: 170px;
+			&__title {
+				font-size: 28px;
+				margin-bottom: 80px;
+			}
+		}
+	}
+}
