@@ -1,5 +1,4 @@
 body {
-  background: url("../../img/entrance-photo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -28,6 +27,26 @@ body {
   list-style-type: none;
   font-size: 22px;
   color: white;
+}
+
+.bg-video .full-screen-video {
+  position: fixed;
+  left: 0 !important;
+  z-index: -2;
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+  .full-screen-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+  .full-screen-video {
+    width: auto;
+    height: 100%;
+  }
 }
 
 .union-container {

@@ -1,7 +1,3 @@
-body {
-  background: url("/img/energomostintgroup/bg-image-merged.png");
-}
-
 body * {
   color: white;
 }
@@ -38,6 +34,26 @@ body * {
           align-items: center;
   color: white !important;
   text-decoration: none !important;
+}
+
+.bg-video .full-screen-video {
+  position: fixed;
+  left: 0 !important;
+  z-index: -2;
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+  .full-screen-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+  .full-screen-video {
+    width: auto;
+    height: 100%;
+  }
 }
 
 .close {
