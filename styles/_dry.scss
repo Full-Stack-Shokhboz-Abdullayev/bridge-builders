@@ -67,14 +67,18 @@
 		transform: matrix(-0.73, -0.68, -0.68, 0.73, 0, 0);
 	}
 }
-
+.number-link {
+	color: white !important;
+	&:hover {
+		text-decoration-color: white !important;
+	}
+}
 .section {
 	height: 100%;
 
 	.transparent {
 		position: fixed;
 		.plus-sign {
-			
 			border-radius: 50%;
 			width: 60px;
 			height: 60px;

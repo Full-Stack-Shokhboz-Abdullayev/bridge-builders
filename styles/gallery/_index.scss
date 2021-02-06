@@ -1,20 +1,32 @@
 .gallery {
-	
 	background: #f3f3f3 !important;
 	position: relative;
 
 	max-width: 1100px !important;
 	margin: auto !important;
-	
 
 	border-radius: 29px !important;
-	
 
 	* {
 		color: black !important;
 	}
 	&__title {
+		position: relative !important;
 		text-align: center !important;
+		&::after {
+			content: "";
+			width: 30%;
+			height: 1px;
+			transform: translateX(-50%);
+			border-radius: 2px;
+			margin: 0 !important;
+			position: absolute;
+			left: 50%;
+			display: block;
+			position: absolute;
+			top: 150%;
+			background: #000000;
+		}
 	}
 	&__group {
 		margin-top: 60px;
@@ -106,4 +118,10 @@
 			}
 		}
 	}
+}
+
+.close {
+	position: absolute;
+	top: 30px;
+	right: 40px;
 }
