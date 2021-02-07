@@ -11,7 +11,7 @@ body {
 		position: absolute;
 		top: 0;
 		left: 0;
-		height: 150px;
+		height: 140px;
 		width: 5px;
 		background: white !important;
 		transform-origin: top;
@@ -34,6 +34,13 @@ body {
 }
 
 .bg-video {
+	.cover {
+		background: rgba(0, 0, 0, 0.3);
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		z-index: -1;
+	}
 	.full-screen-video {
 		position: fixed;
 		left: 0 !important;
@@ -41,6 +48,23 @@ body {
 	}
 }
 
+
+@media (min-aspect-ratio: 16/9) {
+	.full-screen-video {
+		width: 100%;
+		height: auto;
+	}
+}
+@media (max-aspect-ratio: 16/9) {
+	.full-screen-video {
+		width: auto;
+		height: 100%;
+	}
+}
+
+.close {
+	outline: none !important;
+}
 iframe {
 	max-width: 100% !important;
 	width: 100% !important;
@@ -59,23 +83,6 @@ iframe {
 	height: 195px;
 	width: 100%;
 	margin-top: 100px;
-}
-
-@media (min-aspect-ratio: 16/9) {
-	.full-screen-video {
-		width: 100%;
-		height: auto;
-	}
-}
-@media (max-aspect-ratio: 16/9) {
-	.full-screen-video {
-		width: auto;
-		height: 100%;
-	}
-}
-
-.close {
-	outline: none !important;
 }
 
 .effext-medium {

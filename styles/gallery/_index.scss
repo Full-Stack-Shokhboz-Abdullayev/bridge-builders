@@ -128,10 +128,18 @@
 
 @media (max-width: 600px) {
 	.carousel-inner .gallery__group {
-		padding: 20px;
+		padding: 0px !important;
 		width: auto !important;
 		&__item {
-			transform: scale(0.8);
+			img {
+				width: 100%;
+				object-fit: cover !important;
+			}
+			@include scaleImage(0.9, 402px, 480px);
+			margin: 20px;
 		}
+	}
+	.modal-dialog.modal-content.p-5 {
+		padding: 10px !important;
 	}
 }
