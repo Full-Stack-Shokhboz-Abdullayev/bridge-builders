@@ -125,3 +125,13 @@
 	top: 30px;
 	right: 40px;
 }
+
+@media (max-width: 600px) {
+	.carousel-inner .gallery__group {
+		padding: 20px;
+		width: auto !important;
+		&__item {
+			transform: scale(0.8);
+		}
+	}
+}

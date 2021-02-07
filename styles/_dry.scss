@@ -1,12 +1,4 @@
-@function calced($size, $d: 3, $m: 2) {
-	@return calc((#{$size} / #{$d}) * #{$m});
-}
-
-@mixin scaleImage($scaleNum, $h: 338px, $w: 600px) {
-	height: calc(#{$h} * #{$scaleNum}) !important;
-	width: calc(#{$w} * #{$scaleNum}) !important;
-}
-
+@import "./utils";
 body {
 	overflow-x: hidden;
 }

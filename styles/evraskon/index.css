@@ -591,6 +591,17 @@ iframe {
   right: 40px;
 }
 
+@media (max-width: 600px) {
+  .carousel-inner .gallery__group {
+    padding: 20px;
+    width: auto !important;
+  }
+  .carousel-inner .gallery__group__item {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
 .content,
 .plus-sign {
   background: #1d94e0;
