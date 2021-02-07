@@ -16,6 +16,9 @@ $errorColor: #d65858;
 
 	.form-control {
 		border-radius: 0 !important;
+		&.form-control-error {
+			border-color: $errorColor !important;
+		}
 	}
 	.hint {
 		font-size: 15px !important;
@@ -37,31 +40,32 @@ $errorColor: #d65858;
 			margin-bottom: 0;
 			text-align: center;
 		}
+		&.error-shown {
+			display: block !important;
+		}
 	}
 	.small-error-hint {
 		color: #d65858;
 		display: none;
-	}
-	.checkbox:checked ~ .collection {
-		.error {
-			display: block !important;
-		}
-	}
-	.checkbox:checked ~ .input-container {
-		.form-control {
-			border-color: $errorColor;
-		}
-		.small-error-hint {
+		&.small-error-hint-shown {
 			display: unset !important;
 		}
 	}
+
+	// .checkbox:checked ~ .collection {
+
+	// }
 	.checkbox {
 		position: absolute;
 		bottom: 52px;
 		left: 140px;
 	}
 }
+
 .success-msg {
-    color: white;
+	color: white;
 	background: #5ecb7a !important;
 }
+
+// }
+// .checkbox:checked ~ .input-container {
