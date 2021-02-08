@@ -37,7 +37,7 @@ form.addEventListener("submit", (e) => {
 				smErrorMsg[index].classList.remove("small-error-hint-shown")
 			}
 
-			if (i.id === "phone" ? i.value.trim() === "+7" : false) {
+			if (i.id === "phone" && i.value.trim() === "+7") {
 				i.classList.add("form-control-error")
 				smErrorMsg[index].classList.add("small-error-hint-shown")
 			}
