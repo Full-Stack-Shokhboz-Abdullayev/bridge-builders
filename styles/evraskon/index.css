@@ -17,12 +17,55 @@ body {
   top: 0;
   left: 0;
   height: 140px;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
   width: 5px;
   background: white !important;
   -webkit-transform-origin: top;
           transform-origin: top;
   -webkit-transform: matrix(-0.73, -0.68, -0.68, 0.73, 0, 0);
           transform: matrix(-0.73, -0.68, -0.68, 0.73, 0, 0);
+}
+
+.effext-big:hover::before {
+  height: 0;
+}
+
+.effext-medium {
+  position: relative;
+}
+
+.effext-medium::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  height: 100px;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  width: 5px;
+  background: white !important;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: matrix(-0.73, -0.68, -0.68, 0.73, 0, 0);
+          transform: matrix(-0.73, -0.68, -0.68, 0.73, 0, 0);
+}
+
+.effext-medium:hover::before {
+  height: 0;
+}
+
+.plus-sign {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 0.3s ease-in-out all;
+  transition: 0.3s ease-in-out all;
+}
+
+.plus-sign:hover {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .call-to-action {
@@ -41,7 +84,13 @@ body {
   text-decoration: none !important;
 }
 
+.call-to-action:hover img {
+  margin-left: 1.5vw !important;
+}
+
 .call-to-action img {
+  -webkit-transition: 0.2s ease-in-out margin;
+  transition: 0.2s ease-in-out margin;
   width: 121px;
   height: 45px;
 }
@@ -97,25 +146,6 @@ iframe {
   height: 195px;
   width: 100%;
   margin-top: 100px;
-}
-
-.effext-medium {
-  position: relative;
-}
-
-.effext-medium::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -20px;
-  height: 100px;
-  width: 5px;
-  background: white !important;
-  -webkit-transform-origin: top;
-          transform-origin: top;
-  -webkit-transform: matrix(-0.73, -0.68, -0.68, 0.73, 0, 0);
-          transform: matrix(-0.73, -0.68, -0.68, 0.73, 0, 0);
 }
 
 .number-link {
@@ -225,8 +255,19 @@ iframe {
   margin-top: 170px;
 }
 
+.what-we-do__group__item:hover .what-we-do__group__item__title,
+.our-projects__group__item:hover .what-we-do__group__item__title, .what-we-do__group__item:hover
+.our-projects__group__item__title,
+.our-projects__group__item:hover
+.our-projects__group__item__title {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
 .what-we-do__group__item__title,
 .our-projects__group__item__title {
+  -webkit-transition: 0.3s ease-in-out all;
+  transition: 0.3s ease-in-out all;
   text-align: center;
   font-size: 28px;
   margin-bottom: 80px;
