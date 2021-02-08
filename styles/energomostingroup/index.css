@@ -548,4 +548,14 @@ iframe {
   background: white !important;
   border: transparent 1px solid !important;
 }
+
+.country-icon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 50%;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
 /*# sourceMappingURL=index.css.map */

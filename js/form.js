@@ -2,6 +2,7 @@ const form = document.querySelector(".inputs")
 const successMsg = document.querySelector(".success-msg")
 const inputs = form.querySelectorAll("input, select")
 const smErrorMsg = document.querySelectorAll(".small-error-hint")
+const errorTab = document.querySelector(".error")
 
 form.addEventListener("submit", (e) => {
 	e.preventDefault()
@@ -23,6 +24,7 @@ form.addEventListener("submit", (e) => {
 		successMsg.classList.remove("d-none")
 		successMsg.classList.add("d-block")
 	} else {
+		errorTab.classList.add("error-shown")
 		inputs.forEach((i, index) => {
 			if (i.value.trim() === "") {
 				console.log(i)
