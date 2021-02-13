@@ -10,10 +10,16 @@
 	</head>
 	<body>
 		<div class="bg-video">
-			<video class="full-screen-video" muted autoplay loop
-			playsinline
+			<video
+				class="full-screen-video"
+				muted
+				autoplay
+				loop
+				id="autoplay"
+				playsinline
 				oncontextmenu="return false;"
-				preload="auto">
+				preload="auto"
+			>
 				<source type="video/mp4" src="../videos/evroskon.mp4" />
 			</video>
 			<div class="cover"></div>
@@ -370,6 +376,7 @@
 				</section>
 			</div>
 		</section>
+		<script src="../js/form.js"></script>
 
 		<script
 			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
