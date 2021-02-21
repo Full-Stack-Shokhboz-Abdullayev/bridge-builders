@@ -507,7 +507,7 @@ iframe {
 
 .gallery__title::after {
   content: "";
-  width: 30%;
+  width: 200px;
   height: 1px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
