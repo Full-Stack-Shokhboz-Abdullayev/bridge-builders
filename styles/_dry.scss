@@ -352,6 +352,9 @@ iframe {
 	.what-we-do__group,
 	.our-projects__group {
 		&__item {
+			&:first-child {
+				margin-top: 0.75rem !important;
+			}
 			&__title {
 				font-size: calced(28px, 3) !important;
 			}

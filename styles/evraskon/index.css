@@ -416,6 +416,10 @@ iframe {
 }
 
 @media (max-width: 800px) {
+  .what-we-do__group__item:first-child,
+  .our-projects__group__item:first-child {
+    margin-top: 0.75rem !important;
+  }
   .what-we-do__group__item__title,
   .our-projects__group__item__title {
     font-size: calc((28px / 3) * 2) !important;
