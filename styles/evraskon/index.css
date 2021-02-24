@@ -442,7 +442,7 @@ iframe {
   }
   .description,
   .view-map {
-    font-size: calc((25px / 4) * 2) !important;
+    font-size: calc((30px / 4) * 2) !important;
     margin-top: calc((50px / 6) * 2) !important;
   }
   .sections-below {
