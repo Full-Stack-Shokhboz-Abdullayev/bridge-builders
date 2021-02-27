@@ -16,7 +16,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 140px;
+  height: 200px;
+  max-height: 100%;
   -webkit-transition: height 0.3s ease-in-out;
   transition: height 0.3s ease-in-out;
   width: 5px;
@@ -39,9 +40,10 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
+  top: -20%;
   left: -20px;
   height: 100px;
+  max-height: 140%;
   -webkit-transition: height 0.3s ease-in-out;
   transition: height 0.3s ease-in-out;
   width: 5px;
@@ -157,6 +159,10 @@ iframe {
           text-decoration-color: white !important;
 }
 
+.my-margin {
+  margin-top: 30px;
+}
+
 .office-address {
   margin-top: 100px !important;
 }
@@ -222,6 +228,7 @@ iframe {
 }
 
 .section .content {
+  min-height: 100vh;
   margin-left: 50% !important;
   width: 50%;
   padding: 80px 100px;
@@ -236,7 +243,6 @@ iframe {
 }
 
 .section .content .sections-below .section-title {
-  font-size: 52px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -390,11 +396,6 @@ iframe {
     height: calc(121px * 0.5) !important;
     width: calc(45px * 0.5) !important;
   }
-  .big-text.big-text.entire-text,
-  .section-title {
-    -webkit-transform: scale(0.5) !important;
-            transform: scale(0.5) !important;
-  }
   .our-projects__group__item__description {
     font-size: calc((23px / 3) * 2) !important;
   }
@@ -432,13 +433,12 @@ iframe {
 }
 
 @media (max-width: 660px) {
-  .big-text.big-text.entire-text,
-  .section-title {
+  .big-text.entire-text {
     -webkit-transform: scale(0.4) !important;
             transform: scale(0.4) !important;
   }
   .our-projects__group__item__description {
-    font-size: calc((23px / 4) * 2) !important;
+    font-size: calc((30px / 4) * 2) !important;
   }
   .description,
   .view-map {
@@ -450,7 +450,6 @@ iframe {
   }
   .section-description {
     font-size: calc((25px / 4) * 2) !important;
-    margin-top: -10px !important;
   }
   .content {
     padding: calc((80px / 6) * 2) calc((100px / 6) * 2) !important;
