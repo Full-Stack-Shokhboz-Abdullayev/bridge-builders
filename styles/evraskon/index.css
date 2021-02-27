@@ -310,6 +310,14 @@ iframe {
   }
 }
 
+@media (max-width: 1280px) and (min-height: 800px) {
+  .transparent {
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+}
+
 @media (max-width: 1280px) {
   .what-we-do__group,
   .our-projects__group {
