@@ -7,6 +7,10 @@
 		<title>ЭНЕРГО МОСТ ИНТ ГРУП</title>
 		<link rel="stylesheet" href="./styles/energomostingroup/index.css" />
 		<link rel="stylesheet" href="./styles/bootstrap.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/js-datepicker/dist/datepicker.min.css"
+		/>
 	</head>
 	<body>
 		<div class="bg-video">
@@ -176,10 +180,11 @@
 							Выберите дату
 						</span>
 						<input
-							type="date"
+							type="text"
+							placeholder="MM/DD/YYYY"
 							class="form-control w-50"
-							name=""
-							id=""
+							name="input-date"
+							id="input-date"
 						/>
 						<span class="small-error-hint">Обязательное поле</span>
 					</div>
@@ -277,7 +282,8 @@
 				</section>
 			</div>
 		</section>
-		<script src="./js/form.js"></script>
+		<script src="https://unpkg.com/js-datepicker"></script>
+
 		<script
 			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -294,5 +300,15 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="./js/onload.js"></script>
+		<script>
+			const selector = "#input-date"
+			const options = {
+				formatter: (input, date, instance) => {
+					const value = date.toLocaleDateString()
+					input.value = value
+				}
+			}
+			const picker = datepicker(selector, options)
+		</script>
 	</body>
 </html>

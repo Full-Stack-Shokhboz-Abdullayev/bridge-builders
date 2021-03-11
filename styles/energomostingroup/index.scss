@@ -14,14 +14,27 @@ body {
 
 	// padding: 0 10px;
 }
-.content,
+.qs-overlay-month,
+.qs-close,
+.qs-submit {
+	color: white !important;
+}
+.qs-overlay-year {
+	margin-bottom: 10px !important;
+	outline: none !important;
+}
 .plus-sign {
+	&:hover {
+		.bluish {
+			transition: 0.2s ease fill !important;
+			fill: #55ac4e !important;
+		}
+		background: white !important;
+	}
+}
+.content {
 	background: #55ac4e;
 }
-
-// .section-title {
-// 	margin-left: 200px !important;
-// }
 
 .rent {
 	background: transparent !important;

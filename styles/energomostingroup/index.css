@@ -316,6 +316,9 @@ iframe {
         -ms-flex-align: start !important;
             align-items: flex-start !important;
   }
+  .transparent h3 {
+    margin-top: 8vh;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -583,8 +586,28 @@ iframe {
   width: 80%;
 }
 
-.content,
-.plus-sign {
+.qs-overlay-month,
+.qs-close,
+.qs-submit {
+  color: white !important;
+}
+
+.qs-overlay-year {
+  margin-bottom: 10px !important;
+  outline: none !important;
+}
+
+.plus-sign:hover {
+  background: white !important;
+}
+
+.plus-sign:hover .bluish {
+  -webkit-transition: 0.2s ease fill !important;
+  transition: 0.2s ease fill !important;
+  fill: #55ac4e !important;
+}
+
+.content {
   background: #55ac4e;
 }
 

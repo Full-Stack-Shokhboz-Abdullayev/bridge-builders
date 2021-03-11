@@ -6,11 +6,18 @@ body {
 @import "../dry";
 @import "../gallery/index";
 
-.content,
-.plus-sign {
+.content {
 	background: #1d94e0;
 }
-
+.plus-sign {
+	&:hover {
+		.bluish {
+			transition: 0.2s ease fill !important;
+			fill: #1d94e0 !important;
+		}
+		background: white !important;
+	}
+}
 .our-projects__group__item__description {
 	font-size: 23px;
 }

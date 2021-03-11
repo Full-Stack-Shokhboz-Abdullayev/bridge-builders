@@ -9,11 +9,16 @@ body {
 @import "../dry";
 @import "../gallery/index";
 
-.content,
-.plus-sign {
+.content {
 	background: #33377a;
 }
 
-
-
-
+.plus-sign {
+	&:hover {
+		background: white !important;
+		.bluish {
+			transition: 0.2s ease fill !important;
+			fill: #33377a !important;
+		}
+	}
+}
